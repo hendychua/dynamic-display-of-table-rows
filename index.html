@@ -1,0 +1,52 @@
+<script language="javascript" src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+<script language="javascript" src="jquery_dynamic_filter.js"></script>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        $("#content").dynamicFilter({
+            "searchboxid": "filter",
+            "columnsToSearchOn": ["title", "tags"]
+        });
+    });
+</script>
+
+<h1>Test page for dynamic filter<h1>
+    
+<h3>Search: <input type="text" id="filter" size="60"></h3>
+
+<table id="content" width="1000px" border="1" style="table-layout:fixed;">
+    <thead>
+        <tr>
+            <th id="title" width="20%">Title</th>
+            <th id="description" width="55%">Description</th>
+            <th id="tags" width="80%">Tags</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Star Wars</td>
+            <td>An exciting movie about wars that happen in the space. The movie defies physics and science as the characters talk through space and fight with light sabres.</td>
+            <td>Action, sci-fi, drama</td>
+        </tr>
+        <tr>
+            <td>Pirates of the carribean sea</td>
+            <td>Pirates are portrayed as good people in this movie. </td>
+            <td>Action, thriller, comedy</td>
+        </tr>
+        <tr>
+            <td>Pirates of the cababa sea</td>
+            <td>Pirates are portrayed as what pirates are... bad people!</td>
+            <td>Action, thriller, comedy</td>
+        </tr>
+        <tr>
+            <td>A sad love story</td>
+            <td>Watch how two people who truly love each other cannot be together and has to be separated due to their class difference. A really sad story!</td>
+            <td>Drama, romance, emotional</td>
+        </tr>
+        <tr>
+            <td>Car story</td>
+            <td>In this animated film, cars come too life and start talking like real people. Suitable for all ages.</td>
+            <td>Comedy, animation, children</td>
+        </tr>
+    </tbody>
+</table>
